@@ -1,47 +1,49 @@
 name: Save Git History
 
 on:
-  push: 
+  push:
     branches:
-      - main 
+      - main
 
 jobs:
   git-history:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout the repository
-      uses: actions/checkout@v3
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'  
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
-    - name: Install dependencies
-      run: npm install simple-git
+      - name: Install dependencies
+        run: npm install simple-git
 
-    - name: Fetch Git History and Save to JSON
-      run: |
-        node -e "
-          const simpleGit = require('simple-git');
-          const fs = require('fs');
-          const git = simpleGit();
+      - name: Fetch Git History and Save to JSON
+        run: |
+          node -e "
+            const simpleGit = require('simple-git');
+            const fs = require('fs');
+            const git = simpleGit();
           
-          (async () => {
-            const log = await git.log({ maxCount: 10 });
-            const jsonContent = JSON.stringify(log.all, null, 2);
-            fs.writeFileSync('git-history.json', jsonContent);
-            console.log('Git history saved to git-history.json');
-          })();
-        "
+            (async () => {
+              const log = await git.log();
+              const jsonContent = JSON.stringify(log.all, null, 2);
+              fs.writeFileSync('git-history.json', jsonContent);
+              console.log('Git history saved to git-history.json');
+            })();
+          "
 
-    - name: Commit and push the JSON file
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
-      run: |
-        git config --global user.name 'GitHub Actions'
-        git config --global user.email 'actions@github.com'
-        git add git-history.json
-        git commit -m 'Save git history to JSON'
-        git push
+      - name: Commit and push the JSON file
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add git-history.json
+          git commit -m 'Save git history to JSON'
+          git push
