@@ -9,7 +9,7 @@
             background-color: #fbf6e4;
             color: #697a81;
         }
-        .hex {
+        .hex, a {
             color: #ae8a2c;
             text-decoration: dashed underline #697a81;
         }
@@ -20,16 +20,83 @@
             margin: 0 10px;
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-git/3.19.1/simple-git.min.js"></script>
 </head>
 <body>
     <p class="heading">Content:</p>
     <p><span class="dash">-</span><span class="hex">636f6469</span> [<span class="page-name">coding</span>]</p>
     <p><span class="dash">-</span><span class="hex">636f6469</span> [<span class="page-name">about</span>]</p>
     <p class="">Latest changes:</p>
-    <p><span class="dash">-</span><span class="hex">636f6469</span> [<span class="page-name">structure</span>]</p>
-    <p><span class="dash">-</span><span class="hex">636f6469</span> [<span class="page-name">style</span>]</p>
-    <p><span class="dash">-</span><span class="hex">636f6469</span> [<span class="page-name">javascript</span>]</p>
-    <p><span class="dash">-</span><span class="hex">636f6469</span> [<span class="page-name">content</span>]</p>
+    <p><span class="dash">-</span><span id="structure" class="hex">636f6469</span> [<span class="page-name">structure</span>]</p>
+    <p><span class="dash">-</span><span id="style" class="hex">636f6469</span> [<span class="page-name">style</span>]</p>
+    <p><span class="dash">-</span><span id="javascript" class="hex">636f6469</span> [<span class="page-name">javascript</span>]</p>
+    <p><span class="dash">-</span><span id="content" class="hex">636f6469</span> [<span class="page-name">content</span>]</p>
+    <p><span class="dash">-</span><span id="githubactions" class="hex">636f6469</span> [<span class="page-name">git-hub actions</span>]</p>
+    <script>
+        // Function to fetch the JSON file
+        async function fetchChanges() {
+            try {
+                const response = await fetch('git-history.json'); // Replace with your file path
+                const changes = await response.json();
+                updateHexAndAppendMessage(changes);
+            } catch (error) {
+                console.error('Error fetching the changes:', error);
+            }
+        }
+
+        // Function to update hex values and append commit messages
+        function updateHexAndAppendMessage(changes) {
+            // Sort the changes by date to ensure the newest comes first
+            changes.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            changes.forEach(change => {
+                const message = change.message;
+                const cleanMessage = extractMessageBeforeBracket(change.message); // Extract the message part before '['
+
+                if (message.includes("structure")) {
+                    updateHexAndAppend('structure', change.hash, cleanMessage);
+                } else if (message.includes("style")) {
+                    updateHexAndAppend('style', change.hash, cleanMessage);
+                } else if (message.includes("js")) {
+                    updateHexAndAppend('javascript', change.hash, cleanMessage);
+                } else if (message.includes("content")) {
+                    updateHexAndAppend('content', change.hash, cleanMessage);
+                } else if (message.includes("yml")) {
+                    updateHexAndAppend('githubactions', change.hash, cleanMessage);
+                }
+            });
+        }
+
+        // Helper function to extract the message part before the first bracket '['
+        function extractMessageBeforeBracket(message) {
+            const bracketIndex = message.indexOf('[');
+            return bracketIndex !== -1 ? message.slice(0, bracketIndex).trim() : message;
+        }
+
+        // Function to update hex and append the commit message, only if it hasn't been updated yet
+        function updateHexAndAppend(id, hash, cleanMessage) {
+            const element = document.getElementById(id);
+
+            // Check if the element has already been updated with a commit (using a custom attribute)
+            if (element && !element.hasAttribute('data-commit-updated')) {
+                // Update the hex value with the new commit hash link
+                element.innerHTML = `<a href="https://github.com/Nicolas-Py/portfolio-m/commit/${hash}">${hash.slice(0, 8)}</a>`;
+
+                // Create a new span for the commit message and append it after the hex
+                const messageSpan = document.createElement('span');
+                messageSpan.className = "commit-msg";
+                messageSpan.textContent = ` (${cleanMessage})`;
+
+                // Append the new span to the parent <p> element
+                element.parentNode.appendChild(messageSpan);
+
+                // Mark the element as updated to prevent further updates
+                element.setAttribute('data-commit-updated', 'true');
+            }
+        }
+
+        // Fetch the changes on page load
+        fetchChanges();
+    </script>
+
 </body>
 </html>
