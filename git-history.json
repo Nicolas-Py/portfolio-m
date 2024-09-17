@@ -1,9 +1,99 @@
 [
   {
+    "hash": "1766a1ea6ff2d4628e4cb8cce8fbdcc57e930094",
+    "date": "2024-09-17T16:14:56+02:00",
+    "message": "Merge remote-tracking branch 'origin/main'",
+    "refs": "HEAD -> main, origin/main",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "56d5c45118010c112b61751a3354779269a84fc7",
+    "date": "2024-09-17T16:14:44+02:00",
+    "message": "update g-action [yml]",
+    "refs": "",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "5c6ac6be3d590dbba974e7f98a518d9b540dfa63",
+    "date": "2024-09-17T14:08:51Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
     "hash": "7b6ed8f3b0814a7cfc8ed9194937336c518f1322",
     "date": "2024-09-17T16:08:37+02:00",
     "message": "Merge remote-tracking branch 'origin/main'",
-    "refs": "grafted, HEAD -> main, origin/main",
+    "refs": "",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "bd0be4794f9594a903a6e0788ce03cd4279e210e",
+    "date": "2024-09-17T16:08:25+02:00",
+    "message": "add about [content]",
+    "refs": "",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "c03759bdc8ee7002a020cb50aae6be452f1d9eb1",
+    "date": "2024-09-17T14:05:18Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
+    "hash": "a4a603601b2959df04b4c8380e57d78f43b2a05e",
+    "date": "2024-09-17T15:59:33+02:00",
+    "message": "Update git-history.yml",
+    "refs": "",
+    "body": "",
+    "author_name": "Nico",
+    "author_email": "80885367+Nicolas-Py@users.noreply.github.com"
+  },
+  {
+    "hash": "bc8beb46e5bd5f41f1bbcd2eeeb15a0d8de8872f",
+    "date": "2024-09-17T15:55:51+02:00",
+    "message": "Update git-history.yml",
+    "refs": "",
+    "body": "",
+    "author_name": "Nico",
+    "author_email": "80885367+Nicolas-Py@users.noreply.github.com"
+  },
+  {
+    "hash": "776af58b131afb46ab1e1be812c0675846dabfc8",
+    "date": "2024-09-17T15:53:33+02:00",
+    "message": "Create git-history.yml",
+    "refs": "",
+    "body": "",
+    "author_name": "Nico",
+    "author_email": "80885367+Nicolas-Py@users.noreply.github.com"
+  },
+  {
+    "hash": "80cf476581af8bcb297c15588ac4646542c69ef5",
+    "date": "2024-09-12T14:55:14+02:00",
+    "message": "Create static.yml",
+    "refs": "",
+    "body": "",
+    "author_name": "Nico",
+    "author_email": "80885367+Nicolas-Py@users.noreply.github.com"
+  },
+  {
+    "hash": "ada6ea954cd2334691773d951c94396d40b7df24",
+    "date": "2024-09-12T14:52:37+02:00",
+    "message": "init [struct, style, js]",
+    "refs": "",
     "body": "",
     "author_name": "Nicolas-Py",
     "author_email": "nicolasmallinckrodt@gmail.com"
