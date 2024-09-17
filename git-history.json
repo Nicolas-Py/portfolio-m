@@ -1,9 +1,27 @@
 [
   {
+    "hash": "50c7edf0eff23087116faea56b2d1172a50c7f29",
+    "date": "2024-09-17T17:10:51+02:00",
+    "message": "create js logic [js]",
+    "refs": "HEAD -> main, origin/main",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "3107a43b17f4a0eccc02b085ed7c71312dbb4872",
+    "date": "2024-09-17T14:15:11Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
     "hash": "1766a1ea6ff2d4628e4cb8cce8fbdcc57e930094",
     "date": "2024-09-17T16:14:56+02:00",
     "message": "Merge remote-tracking branch 'origin/main'",
-    "refs": "HEAD -> main, origin/main",
+    "refs": "",
     "body": "",
     "author_name": "Nicolas-Py",
     "author_email": "nicolasmallinckrodt@gmail.com"
