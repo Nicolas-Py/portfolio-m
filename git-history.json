@@ -1,9 +1,27 @@
 [
   {
+    "hash": "48a04526d083faac177de7f0a25341621ce76581",
+    "date": "2024-09-17T17:12:48+02:00",
+    "message": "Create README.md",
+    "refs": "HEAD -> main, origin/main",
+    "body": "",
+    "author_name": "Nico",
+    "author_email": "80885367+Nicolas-Py@users.noreply.github.com"
+  },
+  {
+    "hash": "6312737683c84344cfaa83c0d0d344429c239904",
+    "date": "2024-09-17T15:11:09Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
     "hash": "50c7edf0eff23087116faea56b2d1172a50c7f29",
     "date": "2024-09-17T17:10:51+02:00",
     "message": "create js logic [js]",
-    "refs": "HEAD -> main, origin/main",
+    "refs": "",
     "body": "",
     "author_name": "Nicolas-Py",
     "author_email": "nicolasmallinckrodt@gmail.com"
