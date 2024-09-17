@@ -1,11 +1,11 @@
 [
   {
-    "hash": "a4a603601b2959df04b4c8380e57d78f43b2a05e",
-    "date": "2024-09-17T15:59:33+02:00",
-    "message": "Update git-history.yml",
+    "hash": "7b6ed8f3b0814a7cfc8ed9194937336c518f1322",
+    "date": "2024-09-17T16:08:37+02:00",
+    "message": "Merge remote-tracking branch 'origin/main'",
     "refs": "grafted, HEAD -> main, origin/main",
     "body": "",
-    "author_name": "Nico",
-    "author_email": "80885367+Nicolas-Py@users.noreply.github.com"
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
   }
 ]
