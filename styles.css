@@ -1,0 +1,29 @@
+:root {
+    --red: #ca4238;
+    --green: #88982d;
+    --yellow: #ae8a2c;
+    --orange: #f4912e;
+    --cyan: #519e97;
+    --white: #ece8d6;
+}
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #fbf6e4;
+    color: #697a81;
+}
+.hex, a {
+    color: var(--yellow);
+    text-decoration: dashed underline #697a81;
+}
+.page-name {
+    color: var(--red);
+}
+.dash {
+    margin: 0 10px;
+}
+.green {
+    color: var(--green);
+}
+.orange {
+    color: var(--orange);
+}
