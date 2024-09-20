@@ -1,9 +1,27 @@
 [
   {
+    "hash": "7913c7ddf99f9c19367af4263181b9da0c0f6b2c",
+    "date": "2024-09-17T17:53:55+02:00",
+    "message": "add project 1 [content]",
+    "refs": "HEAD -> main, origin/main",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "9d96dc00ea965b8414aa907ba477cfd7acee4e74",
+    "date": "2024-09-17T15:12:59Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
     "hash": "48a04526d083faac177de7f0a25341621ce76581",
     "date": "2024-09-17T17:12:48+02:00",
     "message": "Create README.md",
-    "refs": "HEAD -> main, origin/main",
+    "refs": "",
     "body": "",
     "author_name": "Nico",
     "author_email": "80885367+Nicolas-Py@users.noreply.github.com"
