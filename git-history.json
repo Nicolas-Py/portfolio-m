@@ -1,9 +1,36 @@
 [
   {
+    "hash": "40a2d24d04f0e9ac0770024eab8c0e0c9d476498",
+    "date": "2024-09-20T18:15:58+02:00",
+    "message": "Merge remote-tracking branch 'origin/main'",
+    "refs": "HEAD -> main, origin/main",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "03cb76b813b5ce33273c747d3b3c0111b930162c",
+    "date": "2024-09-20T18:15:33+02:00",
+    "message": "add projects and stylesheet [content, style, structure]",
+    "refs": "",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "daf07d3b368a7bd8eae842d7f9d1ffad5a18b08c",
+    "date": "2024-09-17T15:54:19Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
     "hash": "7913c7ddf99f9c19367af4263181b9da0c0f6b2c",
     "date": "2024-09-17T17:53:55+02:00",
     "message": "add project 1 [content]",
-    "refs": "HEAD -> main, origin/main",
+    "refs": "",
     "body": "",
     "author_name": "Nicolas-Py",
     "author_email": "nicolasmallinckrodt@gmail.com"
