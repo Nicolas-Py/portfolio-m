@@ -17,9 +17,9 @@
       projects.forEach(project => {
         const projectSection = document.createElement('section');
         projectSection.innerHTML = `
-            <h2>${project.title} <span class="page-name ${project.status === 'Completed' ? 'green' : 'orange'}">[${project.status}]</span></h2>
+            <p>${project.title} <span class="page-name ${project.status === 'Completed' ? 'green' : 'orange'}">[${project.status}]</span></h2>
             <p>${project.description}</p>
-            <p><span class="dash">-</span><a target="_blank" rel="noopener noreferrer" href=[${project.link.url}] class="hex">${project.link.hex}</a> [<span class="page-name">${project.link.label}</span>]</p>
+            <p><span class="dash">-</span><a target="_blank" rel="noopener noreferrer" href=${project.link.url} class="hex">${project.link.hex}</a> [<span class="page-name">${project.link.label}</span>]</p>
             <hr>
         `;
         container.appendChild(projectSection);

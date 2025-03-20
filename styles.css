@@ -17,6 +17,7 @@ body {
 }
 .page-name {
     color: var(--red);
+    font-weight: 50;
 }
 .dash {
     margin: 0 10px;
