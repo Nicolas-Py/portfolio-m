@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Nodes",
+        "status": "Comming Soon",
+        "description": "Native MacOS app leveraging SwiftData and CoreLM.",
+        "link": {
+            "url": "https://nicolas-py.github.io/nodes-web/",
+            "label": "WEB",
+            "hex": "E4C5CECF"
+        }
+    },
+    {
+        "title": "Portfolio I",
+        "status": "Under Development",
+        "description": "One of my portfolio page designs, inspired by the Bauhaus school.",
+        "link": {
+            "url": "https://nicolas-py.github.io/portfolio-b/",
+            "label": "WEB",
+            "hex": "FAC5D8DE"
+        }
+    },
+    {
+        "title": "Portfolio II",
+        "status": "Under Development",
+        "description": "Portfolio webpage inspired by the oh my zsh update dialoge.",
+        "link": {
+            "url": "https://nicolas-py.github.io/portfolio-m/",
+            "label": "WEB",
+            "hex": "FAC5D8DE"
+        }
+    },
+    {
+        "title": "Cachesim",
+        "status": "Completed",
+        "description": "This project investigates the simulation of direct-mapped and fully-associative caches in modern processors. It compares performance metrics of different cache architectures implemented in SystemC, C++ and C.",
+        "link": {
+            "url": "https://github.com/Nicolas-Py/system-c-gra-project",
+            "label": "Git-Hub",
+            "hex": "E9CBC9C2"
+        }
+    },
+    {
+        "title": "Soundscape",
+        "status": "Completed",
+        "description": "For my Unreal Engine 4 project, I created an immersive 3D sound world with spatial audio dynamics and interactive soundscapes.",
+        "link": {
+            "url": "https://github.com/Nicolas-Py/ParaboxUnrealProject",
+            "label": "Git-Hub",
+            "hex": "F9C5DFC4"
+        }
+    }
+]
