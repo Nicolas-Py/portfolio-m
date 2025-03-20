@@ -1,14 +1,14 @@
-Hosted at
+### Hosted at
 https://nicolas-py.github.io/portfolio-m/
 
-Possible tags
+### Possible tags
 - structure
 - style
 - js
 - content
 - yml
 
-## Python code for the hex values (except the git links)
+### Python code for the hex values (except the git links)
 
 ```python 
 def word_to_hex(word):
