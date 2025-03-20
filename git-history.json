@@ -1,9 +1,36 @@
 [
   {
+    "hash": "86329f84493b771a34e80d112d0628321c8d7cf1",
+    "date": "2025-03-20T20:26:36+01:00",
+    "message": "Merge branch 'main' of https://github.com/Nicolas-Py/portfolio-m",
+    "refs": "HEAD -> main, origin/main, origin/HEAD",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "0b7012b12ac9d0c58cbb8ee5ef0bdd9b0e7aca76",
+    "date": "2025-03-20T20:26:35+01:00",
+    "message": "Pull data from json and add new projects  [js, content]",
+    "refs": "",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "d71a65e84fc5cf5cf2a43b04dd355afc59028f6a",
+    "date": "2024-09-25T13:51:04Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
     "hash": "b82403944078aa25b4eb827cd9aca01d02f6ffcf",
     "date": "2024-09-25T15:50:44+02:00",
     "message": "add about [content]",
-    "refs": "HEAD -> main, origin/main",
+    "refs": "",
     "body": "",
     "author_name": "Nicolas-Py",
     "author_email": "nicolasmallinckrodt@gmail.com"
