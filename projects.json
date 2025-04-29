@@ -1,5 +1,15 @@
 [
     {
+        "title": "YourCast",
+        "status": "Under Development",
+        "description": "YourCast is a modern podcast discovery and AI-powered episode generation platform. It allows users to explore, summarize, and even generate custom podcast episodes based on their preferences.",
+        "link": {
+            "url": "https://github.com/neuromaxer/yourcast",
+            "label": "Git-Hub",
+            "hex": "21FDFDFD"
+        }
+    },
+    {
         "title": "Nodes",
         "status": "Comming Soon",
         "description": "Native MacOS app leveraging SwiftData and CoreLM.",
