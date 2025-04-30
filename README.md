@@ -1,6 +1,13 @@
 ### Hosted at
 https://nicolas-py.github.io/portfolio-m/
 
+### Run locally
+To run the website locally, use Python's built-in HTTP server:
+```bash
+python3 -m http.server 8000
+```
+Then open your browser and navigate to `http://localhost:8000`
+
 ### Possible tags
 - structure
 - style
