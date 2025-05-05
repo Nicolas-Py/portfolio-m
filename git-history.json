@@ -1,9 +1,27 @@
 [
   {
+    "hash": "82d1de53e4945faee4806a8a2fad90e75d41f8ce",
+    "date": "2025-04-30T15:29:13+02:00",
+    "message": "Add favicon",
+    "refs": "HEAD -> main, origin/main, origin/HEAD",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "87b8ceb02be95247bb751cb80f3b495a3745f3d4",
+    "date": "2025-04-29T12:26:29Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
     "hash": "85f65ece4496281502e08a349db167ef41193e40",
     "date": "2025-04-29T14:26:15+02:00",
     "message": "Merge branch 'main' of https://github.com/Nicolas-Py/portfolio-m",
-    "refs": "HEAD -> main, origin/main, origin/HEAD",
+    "refs": "",
     "body": "",
     "author_name": "Nicolas-Py",
     "author_email": "nicolasmallinckrodt@gmail.com"
