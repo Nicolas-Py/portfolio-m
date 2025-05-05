@@ -11,11 +11,11 @@
 <p><span class="dash"><-</span><a href="/portfolio-m/" class="hex">dac5d8de</a> [<span class="page-name">GO BACK</span>]</p>
 <div id="projects-container"></div>
 <script>
-  fetch('projects.json')
+  fetch('data.json')
     .then(response => response.json())
-    .then(projects => {
+    .then(data => {
       const container = document.getElementById('projects-container');
-      projects.forEach(project => {
+      data.projects.forEach(project => {
         const projectSection = document.createElement('section');
         projectSection.innerHTML = `
             <p>${project.title} <span class="page-name ${project.status === 'Completed' ? 'green' : 'orange'}">[${project.status}]</span></h2>
@@ -26,7 +26,7 @@
         container.appendChild(projectSection);
       });
     })
-    .catch(error => console.error('Error loading projects:', error));
+    .catch(error => console.error('Error loading data:', error));
 </script>
 </body>
 </html>

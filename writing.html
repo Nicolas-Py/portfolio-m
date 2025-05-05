@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVM - Writing</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<p><span class="dash"><-</span><a href="/portfolio-m/" class="hex">dac5d8de</a> [<span class="page-name">GO BACK</span>]</p>
+<div id="writing-container"></div>
+<script>
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('writing-container');
+      data.writing.forEach(article => {
+        const articleSection = document.createElement('section');
+        articleSection.innerHTML = `
+            <p>${article.title} <span class="page-name">[${article.date}]</span></p>
+            <p>${article.description}</p>
+            <p><span class="dash">-</span><a href="${article.link.url}" class="hex">${article.link.hex}</a> [<span class="page-name">${article.link.label}</span>]</p>
+            <p>${"----------------------------------------"}</p>
+        `;
+        container.appendChild(articleSection);
+      });
+    })
+    .catch(error => console.error('Error loading data:', error));
+</script>
+</body>
+</html> 
