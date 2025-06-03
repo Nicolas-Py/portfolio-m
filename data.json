@@ -21,6 +21,16 @@
             }
         },
         {
+            "title": "Basel WEB",
+            "status": "Completed",
+            "description": "Multimedia guide for the The Kunstmuseum Basel. I worked on the project as a Junior developer and mainly build the 'Museum' page",
+            "link": {
+                "url": "https://guide.kumu.swiss/",
+                "label": "WEB",
+                "hex": "FDDD8DE"
+            }
+        },
+        {
             "title": "Portfolio I",
             "status": "Under Development",
             "description": "One of my portfolio page designs, inspired by the Bauhaus school.",
