@@ -15,7 +15,7 @@
             "status": "Under Development",
             "description": "Native MacOS app leveraging SwiftData and CoreLM. Nodes is exploring a fresh approach to knowledge management and content creation, currently available in closed alpha. At its core, the platform uses interconnected nodes to represent distinct pieces of information or ideas, creating a flexible and intuitive system for users.",
             "link": {
-                "url": "https://nicolas-py.github.io/nodes-web/",
+                "url": "https://nodes-web.com",
                 "label": "WEB",
                 "hex": "E4C5CECF"
             }
