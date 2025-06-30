@@ -1,9 +1,27 @@
 [
   {
+    "hash": "7b2ccabd7a75097aefa132d7cb8268ef7cdef774",
+    "date": "2025-06-30T15:36:55+02:00",
+    "message": "Update nodes link (content)",
+    "refs": "HEAD -> main, origin/main, origin/HEAD",
+    "body": "",
+    "author_name": "Nico",
+    "author_email": "80885367+Nicolas-Py@users.noreply.github.com"
+  },
+  {
+    "hash": "9461937b4aad0daaf76c5d4c3c0169a37e5f4304",
+    "date": "2025-06-03T09:48:32Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
     "hash": "e8cf8af8ce01d00432c6b39df723489d0aaa9e2b",
     "date": "2025-06-03T11:48:20+02:00",
     "message": "Update data.json",
-    "refs": "HEAD -> main, origin/main, origin/HEAD",
+    "refs": "",
     "body": "",
     "author_name": "Nico",
     "author_email": "80885367+Nicolas-Py@users.noreply.github.com"
