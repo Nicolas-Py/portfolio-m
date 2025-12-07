@@ -11,8 +11,15 @@
 <p><span class="dash"><-</span><a href="/portfolio-m/" class="hex">dac5d8de</a> [<span class="page-name">GO BACK</span>]</p>
 <div id="writing-container"></div>
 <script>
-  fetch('data.json')
-    .then(response => response.json())
+  const PORTFOLIO_API_URL = 'https://nicolas-py.github.io/portfolio-provider/api/portfolio.json';
+  
+  fetch(PORTFOLIO_API_URL)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Failed to fetch: ${response.status}`);
+      }
+      return response.json();
+    })
     .then(data => {
       const container = document.getElementById('writing-container');
       data.writing.forEach(article => {

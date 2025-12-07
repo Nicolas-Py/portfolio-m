@@ -1,14 +1,48 @@
 ### Hosted at
+
 https://nicolas-py.github.io/portfolio-m/
 
+### Data API
+
+Portfolio data is fetched from the centralized API:
+
+```
+https://nicolas-py.github.io/portfolio-provider/api/portfolio.json
+```
+
+### Type Generation
+
+This project uses OpenAPI types for type-safe API access. To regenerate types from the OpenAPI schema:
+
+```bash
+npm run generate-types
+```
+
+### Development
+
+```bash
+# Install dependencies
+npm install
+
+# Build TypeScript
+npm run build
+
+# Watch mode for development
+npm run dev
+```
+
 ### Run locally
+
 To run the website locally, use Python's built-in HTTP server:
+
 ```bash
 python3 -m http.server 8000
 ```
+
 Then open your browser and navigate to `http://localhost:8000`
 
 ### Possible tags
+
 - structure
 - style
 - js
@@ -17,23 +51,23 @@ Then open your browser and navigate to `http://localhost:8000`
 
 ### Python code for the hex values (except the git links)
 
-```python 
+```python
 def word_to_hex(word):
     # Choose a constant key for XOR (can be any byte value, 0xAA here for example)
     key = 0xAA
-    
+
     # Convert each character to its ASCII value, apply XOR, and store the result
     xor_values = [ord(char) ^ key for char in word]
-    
+
     # Combine the XORed values into a hex string
     hex_string = ''.join(f'{value:02X}' for value in xor_values)
-    
+
     # Truncate or pad the hex string to ensure it's 8 digits
     if len(hex_string) > 8:
         hex_string = hex_string[:8]  # Truncate if too long
     else:
         hex_string = hex_string.ljust(8, '0')  # Pad with zeroes if too short
-    
+
     return hex_string
 
 # Example usage
