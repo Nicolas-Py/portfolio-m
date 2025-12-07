@@ -11,12 +11,12 @@
             }
         },
         {
-            "title": "Nodes",
-            "status": "Under Development",
-            "description": "Native MacOS app leveraging SwiftData and CoreLM. Nodes is exploring a fresh approach to knowledge management and content creation, currently available in closed alpha. At its core, the platform uses interconnected nodes to represent distinct pieces of information or ideas, creating a flexible and intuitive system for users.",
+            "title": "Nodes - by the WERK",
+            "status": "Live",
+            "description": "Native MacOS app leveraging SwiftData and CoreLM. Nodes is exploring a fresh approach to knowledge management and content creation. At its core, the platform uses interconnected nodes to represent distinct pieces of information or ideas, creating a flexible and intuitive system for users.",
             "link": {
-                "url": "https://nodes-web.com",
-                "label": "WEB",
+                "url": "https://apps.apple.com/de/app/nodes-by-the-werk/id6745401961?l=en-GB&mt=12",
+                "label": "App Store",
                 "hex": "E4C5CECF"
             }
         },
