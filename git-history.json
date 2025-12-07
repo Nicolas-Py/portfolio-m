@@ -1,9 +1,27 @@
 [
   {
+    "hash": "769463382435899de8ef4d915b8b010e9d8b82af",
+    "date": "2025-12-07T11:24:59+01:00",
+    "message": "load projects via api",
+    "refs": "HEAD -> main, origin/main",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "55022ec691c07579841086bd7c78191bbff984c3",
+    "date": "2025-12-07T09:56:00Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
     "hash": "f9e2cdddcec6191ff78bd3ab5987f61406ab9772",
     "date": "2025-12-07T10:55:48+01:00",
     "message": "Live in the fkn appstore",
-    "refs": "HEAD -> main, origin/main",
+    "refs": "",
     "body": "",
     "author_name": "Nicolas-Py",
     "author_email": "nicolasmallinckrodt@gmail.com"
