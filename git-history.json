@@ -1,9 +1,27 @@
 [
   {
+    "hash": "f9e2cdddcec6191ff78bd3ab5987f61406ab9772",
+    "date": "2025-12-07T10:55:48+01:00",
+    "message": "Live in the fkn appstore",
+    "refs": "HEAD -> main, origin/main",
+    "body": "",
+    "author_name": "Nicolas-Py",
+    "author_email": "nicolasmallinckrodt@gmail.com"
+  },
+  {
+    "hash": "4f882494486d09f29bde35ddd1ff9180e5cb6acb",
+    "date": "2025-06-30T13:37:11Z",
+    "message": "Save git history to JSON",
+    "refs": "",
+    "body": "",
+    "author_name": "GitHub Actions",
+    "author_email": "actions@github.com"
+  },
+  {
     "hash": "7b2ccabd7a75097aefa132d7cb8268ef7cdef774",
     "date": "2025-06-30T15:36:55+02:00",
     "message": "Update nodes link (content)",
-    "refs": "HEAD -> main, origin/main, origin/HEAD",
+    "refs": "",
     "body": "",
     "author_name": "Nico",
     "author_email": "80885367+Nicolas-Py@users.noreply.github.com"
