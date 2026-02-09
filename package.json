@@ -2,16 +2,6 @@
   "name": "portfolio-m",
   "version": "1.0.0",
   "description": "Portfolio website inspired by oh-my-zsh update dialog",
-  "type": "module",
-  "scripts": {
-    "generate-types": "openapi-typescript https://nicolas-py.github.io/portfolio-provider/openapi.json -o ./types/portfolio.d.ts",
-    "build": "tsc",
-    "dev": "tsc --watch"
-  },
-  "devDependencies": {
-    "openapi-typescript": "^7.4.4",
-    "typescript": "^5.7.2"
-  },
   "author": "Nicolas Py",
   "license": "MIT"
 }

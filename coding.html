@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NVM - Coding</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVM - Coding</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<p><span class="dash"><-</span><a href="/portfolio-m/" class="hex">dac5d8de</a> [<span class="page-name">GO BACK</span>]</p>
-<div id="projects-container"></div>
-<script>
-  const PORTFOLIO_API_URL = 'https://nicolas-py.github.io/portfolio-provider/api/portfolio.json';
-  
-  fetch(PORTFOLIO_API_URL)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Failed to fetch: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(data => {
-      const container = document.getElementById('projects-container');
-      data.projects.forEach(project => {
-        const projectSection = document.createElement('section');
-        projectSection.innerHTML = `
-            <p>${project.title} <span class="page-name ${project.status === 'Completed' ? 'green' : 'orange'}">[${project.status}]</span></h2>
+  <p><span class="dash">&lt;-</span><a href="/portfolio-m/" class="hex">dac5d8de</a> [<span class="page-name">GO
+      BACK</span>]</p>
+  <div id="projects-container"></div>
+  <script>
+    const PORTFOLIO_API_URL = 'https://nicolas-py.github.io/portfolio-provider/api/portfolio.json';
+
+    // Generate 8-char hex from last 4 chars of URL (strips trailing slash)
+    const toHex = (url) => url.replace(/\/$/, '').slice(-4).split('').map(c => c.charCodeAt(0).toString(16).toUpperCase().padStart(2, '0')).join('').padEnd(8, '0');
+
+    // Ready states (green), everything else is orange
+    const isReady = (status) => ['Completed', 'App Store', 'Live'].includes(status);
+
+    fetch(PORTFOLIO_API_URL)
+      .then(response => {
+        if (!response.ok) throw new Error(`Failed to fetch: ${response.status}`);
+        return response.json();
+      })
+      .then(data => {
+        const container = document.getElementById('projects-container');
+        data.projects.forEach(project => {
+          const hex = toHex(project.link.url);
+          const projectSection = document.createElement('section');
+          projectSection.innerHTML = `
+            <p>${project.title} <span class="page-name ${isReady(project.status) ? 'green' : 'orange'}">[${project.status}]</span></p>
             <p>${project.description}</p>
-            <p><span class="dash">-</span><a target="_blank" rel="noopener noreferrer" href=${project.link.url} class="hex">${project.link.hex}</a> [<span class="page-name">${project.link.label}</span>]</p>
-            <p>${"----------------------------------------"}</p>
+            <p><span class="dash">-</span><a target="_blank" rel="noopener noreferrer" href="${project.link.url}" class="hex">${hex}</a> [<span class="page-name">${project.link.label}</span>]</p>
+            <p>----------------------------------------</p>
         `;
-        container.appendChild(projectSection);
-      });
-    })
-    .catch(error => console.error('Error loading data:', error));
-</script>
+          container.appendChild(projectSection);
+        });
+      })
+      .catch(error => console.error('Error loading data:', error));
+  </script>
 </body>
+
 </html>

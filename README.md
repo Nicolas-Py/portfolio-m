@@ -10,38 +10,15 @@ Portfolio data is fetched from the centralized API:
 https://nicolas-py.github.io/portfolio-provider/api/portfolio.json
 ```
 
-### Type Generation
-
-This project uses OpenAPI types for type-safe API access. To regenerate types from the OpenAPI schema:
-
-```bash
-npm run generate-types
-```
-
-### Development
-
-```bash
-# Install dependencies
-npm install
-
-# Build TypeScript
-npm run build
-
-# Watch mode for development
-npm run dev
-```
-
 ### Run locally
-
-To run the website locally, use Python's built-in HTTP server:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open your browser and navigate to `http://localhost:8000`
+Then open `http://localhost:8000`
 
-### Possible tags
+### Commit tags
 
 - structure
 - style
@@ -49,29 +26,14 @@ Then open your browser and navigate to `http://localhost:8000`
 - content
 - yml
 
-### Python code for the hex values (except the git links)
+### Hex generation
 
-```python
-def word_to_hex(word):
-    # Choose a constant key for XOR (can be any byte value, 0xAA here for example)
-    key = 0xAA
+Hex codes are generated client-side from the last 4 chars of URLs:
 
-    # Convert each character to its ASCII value, apply XOR, and store the result
-    xor_values = [ord(char) ^ key for char in word]
+```javascript
+const toHex = (url) => url.replace(/\/$/, '').slice(-4).split('').map(c => 
+  c.charCodeAt(0).toString(16).toUpperCase().padStart(2, '0')
+).join('').padEnd(8, '0');
 
-    # Combine the XORed values into a hex string
-    hex_string = ''.join(f'{value:02X}' for value in xor_values)
-
-    # Truncate or pad the hex string to ensure it's 8 digits
-    if len(hex_string) > 8:
-        hex_string = hex_string[:8]  # Truncate if too long
-    else:
-        hex_string = hex_string.ljust(8, '0')  # Pad with zeroes if too short
-
-    return hex_string
-
-# Example usage
-word = "Hello"
-hex_code = word_to_hex(word)
-print(f"The 8-digit hex code for '{word}' is: {hex_code}")
+// ".../portfolio-m/" → "6F2D6D00" (from "o-m")
 ```
